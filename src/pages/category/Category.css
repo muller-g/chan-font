@@ -1,0 +1,93 @@
+.category{
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.category .title{
+    margin-top: 20px;
+}
+
+.category .new-post{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    border-top: 1px solid var(--blue);
+    flex-direction: column;
+}
+
+.category .new-post a{
+    text-decoration: none;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.category .new-post .post-create{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    transform: translateY(-10%);
+    transition: .3s;
+    height: 0px;
+    opacity: 0;
+    z-index: -999999;
+}
+
+.category .new-post .post-create .post-create-container{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.category .new-post .post-create .post-create-container .create-line{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 1fr;
+}
+
+.category .new-post .post-create .post-create-container .create-line input{
+    width: 100%;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.category .new-post .post-create .post-create-container .create-line label{
+    width: 100%;
+    background-color: lightgray;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px;
+}
+
+.category .new-post .post-create .post-create-container .create-line legend{
+    width: 70px;
+}
+
+.category .new-post .post-create .post-create-container .create-line input[type="file"]{
+    display: none;
+}
+
+.category .new-post .post-create .post-create-container .create-line textarea{
+    outline: none;
+    padding: 5px 10px;
+}
+
+.category .new-post .post-create .post-create-container .create-line button{
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.post-create-on{
+    height: auto!important;
+    opacity: 1!important;
+    z-index: 999999!important;
+    transition: .3s!important;
+    transform: translateY(0%)!important;
+}

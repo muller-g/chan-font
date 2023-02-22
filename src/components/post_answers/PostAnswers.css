@@ -1,0 +1,10 @@
+.post-answers{
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+}
+
+.post-answers p span{
+    font-size: 12px;
+    color: rgb(109, 109, 109);
+}
